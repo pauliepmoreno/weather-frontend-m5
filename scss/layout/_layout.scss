@@ -1,0 +1,23 @@
+body {
+    font-family: $font-family;
+    background-color: #f5f0ff;
+}
+
+.site-header {
+    background-color: $color-primary;
+}
+
+.site-nav {
+    background-color: $color-navbar;
+
+    &__brand,
+    &__link {
+        color: white !important;
+    }
+}
+
+.site-footer {
+    background-color: $color-footer;
+    text-align: center;
+    padding: 1rem;
+}

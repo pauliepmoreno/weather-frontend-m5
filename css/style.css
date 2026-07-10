@@ -1,0 +1,34 @@
+header {
+    background-color: #6a0dad;
+}
+
+
+.navbar-custom {
+    background-color: #3d1064;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: white !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.btn-custom {
+    background-color: #6a0dad;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #ede9fe;
+}
+
