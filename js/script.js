@@ -252,10 +252,20 @@ class WeatherApp {
     }
 
     async cargarLugares() {
-        for (let i = 0; i < this.lugares.length; i++) {
-            const clima = await this.obtenerClimaActual(this.lugares[i].lat, this.lugares[i].lng);
-            this.lugares[i].tempActual = Math.round(clima.temperature);
-            this.lugares[i].viento = clima.windspeed;
+
+        try {
+            for (let i = 0; i < this.lugares.length; i++) {
+                const clima = await this.obtenerClimaActual(this.lugares[i].lat, this.lugares[i].lng);
+                this.lugares[i].tempActual = Math.round(clima.temperature);
+                this.lugares[i].viento = clima.windspeed;
+            }
+        }
+
+        catch (error) {
+            document.getElementById("ciudadesClima").innerHTML = `
+        <p class="text-danger">⚠️ Error al cargar los datos del clima. Intenta más tarde.</p>
+    `;
+            return;
         }
     }
 
