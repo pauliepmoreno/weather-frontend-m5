@@ -1,6 +1,14 @@
 const ciudades = [
     {
-        id: 1, nombre: "Santiago", tempActual: 17, estadoActual: "Sunny", emoji: "☀️", humedad: 48, viento: 12,
+        id: 1,
+        nombre: "Santiago",
+        lat: -33.45,
+        lng: -70.65,
+        tempActual: 17,
+        estadoActual: "Sunny",
+        emoji: "☀️",
+        humedad: 48,
+        viento: 12,
         pronostico: [
             { dia: "Lunes", emoji: "☀️", min: 12, max: 18, estado: "Sunny" },
             { dia: "Martes", emoji: "⛅", min: 10, max: 15, estado: "Partly Cloudy" },
@@ -12,7 +20,15 @@ const ciudades = [
         ]
     },
     {
-        id: 2, nombre: "New York", tempActual: 12, estadoActual: "Cloudy", emoji: "☁️", humedad: 72, viento: 18,
+        id: 2,
+        nombre: "New York",
+        lat: 40.71,
+        lng: -74.01,
+        tempActual: 12,
+        estadoActual: "Cloudy",
+        emoji: "☁️",
+        humedad: 72,
+        viento: 18,
         pronostico: [
             { dia: "Lunes", emoji: "☁️", min: 7, max: 11, estado: "Cloudy" },
             { dia: "Martes", emoji: "🌧️", min: 5, max: 9, estado: "Rainy" },
@@ -24,7 +40,15 @@ const ciudades = [
         ]
     },
     {
-        id: 3, nombre: "London", tempActual: 9, estadoActual: "Rainy", emoji: "🌧️", humedad: 88, viento: 22,
+        id: 3,
+        nombre: "London",
+        lat: 51.51,
+        lng: -0.13,
+        tempActual: 9,
+        estadoActual: "Rainy",
+        emoji: "🌧️",
+        humedad: 88,
+        viento: 22,
         pronostico: [
             { dia: "Lunes", emoji: "🌧️", min: 5, max: 8, estado: "Rainy" },
             { dia: "Martes", emoji: "🌧️", min: 4, max: 7, estado: "Rainy" },
@@ -36,7 +60,15 @@ const ciudades = [
         ]
     },
     {
-        id: 4, nombre: "Tokyo", tempActual: 22, estadoActual: "Partly Cloudy", emoji: "⛅", humedad: 65, viento: 10,
+        id: 4,
+        nombre: "Tokyo",
+        lat: 35.68,
+        lng: 139.69,
+        tempActual: 22,
+        estadoActual: "Partly Cloudy",
+        emoji: "⛅",
+        humedad: 65,
+        viento: 10,
         pronostico: [
             { dia: "Lunes", emoji: "☀️", min: 18, max: 24, estado: "Sunny" },
             { dia: "Martes", emoji: "⛅", min: 17, max: 22, estado: "Partly Cloudy" },
@@ -48,7 +80,15 @@ const ciudades = [
         ]
     },
     {
-        id: 5, nombre: "Paris", tempActual: 11, estadoActual: "Rainy", emoji: "🌧️", humedad: 81, viento: 16,
+        id: 5,
+        nombre: "Paris",
+        lat: 48.85,
+        lng: 2.35,
+        tempActual: 11,
+        estadoActual: "Rainy",
+        emoji: "🌧️",
+        humedad: 81,
+        viento: 16,
         pronostico: [
             { dia: "Lunes", emoji: "🌧️", min: 6, max: 10, estado: "Rainy" },
             { dia: "Martes", emoji: "☁️", min: 7, max: 12, estado: "Cloudy" },
@@ -60,7 +100,15 @@ const ciudades = [
         ]
     },
     {
-        id: 6, nombre: "Dubai", tempActual: 38, estadoActual: "Sunny", emoji: "☀️", humedad: 29, viento: 14,
+        id: 6,
+        nombre: "Dubai",
+        lat: 25.20,
+        lng: 55.27,
+        tempActual: 38,
+        estadoActual: "Sunny",
+        emoji: "☀️",
+        humedad: 29,
+        viento: 14,
         pronostico: [
             { dia: "Lunes", emoji: "☀️", min: 30, max: 39, estado: "Sunny" },
             { dia: "Martes", emoji: "☀️", min: 31, max: 40, estado: "Sunny" },
@@ -72,7 +120,15 @@ const ciudades = [
         ]
     },
     {
-        id: 7, nombre: "Sydney", tempActual: 20, estadoActual: "Sunny", emoji: "☀️", humedad: 55, viento: 20,
+        id: 7,
+        nombre: "Sydney",
+        lat: -33.87,
+        lng: 151.21,
+        tempActual: 20,
+        estadoActual: "Sunny",
+        emoji: "☀️",
+        humedad: 55,
+        viento: 20,
         pronostico: [
             { dia: "Lunes", emoji: "☀️", min: 15, max: 21, estado: "Sunny" },
             { dia: "Martes", emoji: "☀️", min: 16, max: 22, estado: "Sunny" },
@@ -84,7 +140,15 @@ const ciudades = [
         ]
     },
     {
-        id: 8, nombre: "Mexico City", tempActual: 25, estadoActual: "Partly Cloudy", emoji: "⛅", humedad: 58, viento: 11,
+        id: 8,
+        nombre: "Mexico City",
+        lat: 19.43,
+        lng: -99.13,
+        tempActual: 25,
+        estadoActual: "Partly Cloudy",
+        emoji: "⛅",
+        humedad: 58,
+        viento: 11,
         pronostico: [
             { dia: "Lunes", emoji: "⛅", min: 18, max: 24, estado: "Partly Cloudy" },
             { dia: "Martes", emoji: "☀️", min: 20, max: 26, estado: "Sunny" },
@@ -96,7 +160,15 @@ const ciudades = [
         ]
     },
     {
-        id: 9, nombre: "Cairo", tempActual: 35, estadoActual: "Sunny", emoji: "☀️", humedad: 25, viento: 17,
+        id: 9,
+        nombre: "Cairo",
+        lat: 30.04,
+        lng: 31.24,
+        tempActual: 35,
+        estadoActual: "Sunny",
+        emoji: "☀️",
+        humedad: 25,
+        viento: 17,
         pronostico: [
             { dia: "Lunes", emoji: "☀️", min: 28, max: 36, estado: "Sunny" },
             { dia: "Martes", emoji: "☀️", min: 29, max: 37, estado: "Sunny" },
@@ -108,7 +180,15 @@ const ciudades = [
         ]
     },
     {
-        id: 10, nombre: "Moscow", tempActual: -2, estadoActual: "Snowy", emoji: "❄️", humedad: 90, viento: 13,
+        id: 10,
+        nombre: "Moscow",
+        lat: 55.75,
+        lng: 37.62,
+        tempActual: -2,
+        estadoActual: "Snowy",
+        emoji: "❄️",
+        humedad: 90,
+        viento: 13,
         pronostico: [
             { dia: "Lunes", emoji: "❄️", min: -6, max: -3, estado: "Snowy" },
             { dia: "Martes", emoji: "❄️", min: -8, max: -5, estado: "Snowy" },
@@ -120,7 +200,15 @@ const ciudades = [
         ]
     },
     {
-        id: 11, nombre: "Buenos Aires", tempActual: 19, estadoActual: "Windy", emoji: "💨", humedad: 63, viento: 31,
+        id: 11,
+        nombre: "Buenos Aires",
+        lat: -34.61,
+        lng: -58.38,
+        tempActual: 19,
+        estadoActual: "Windy",
+        emoji: "💨",
+        humedad: 63,
+        viento: 31,
         pronostico: [
             { dia: "Lunes", emoji: "💨", min: 13, max: 18, estado: "Windy" },
             { dia: "Martes", emoji: "☀️", min: 15, max: 20, estado: "Sunny" },
@@ -132,7 +220,15 @@ const ciudades = [
         ]
     },
     {
-        id: 12, nombre: "Beijing", tempActual: 14, estadoActual: "Foggy", emoji: "🌫️", humedad: 84, viento: 7,
+        id: 12,
+        nombre: "Beijing",
+        lat: 39.91,
+        lng: 116.39,
+        tempActual: 14,
+        estadoActual: "Foggy",
+        emoji: "🌫️",
+        humedad: 84,
+        viento: 7,
         pronostico: [
             { dia: "Lunes", emoji: "🌫️", min: 8, max: 13, estado: "Foggy" },
             { dia: "Martes", emoji: "☁️", min: 10, max: 15, estado: "Cloudy" },
@@ -144,6 +240,48 @@ const ciudades = [
         ]
     }
 ];
+
+class WeatherApp {
+    constructor() {
+        this.lugares = ciudades; // array de ciudades
+    }
+    async obtenerClimaActual(lat, lng) {
+        const respuesta = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`);
+        const datos = await respuesta.json();
+        return datos.current_weather;
+    }
+
+    async cargarLugares() {
+        for (let i = 0; i < this.lugares.length; i++) {
+            const clima = await this.obtenerClimaActual(this.lugares[i].lat, this.lugares[i].lng);
+            this.lugares[i].tempActual = Math.round(clima.temperature);
+            this.lugares[i].viento = clima.windspeed;
+        }
+    }
+
+    mostrarCardsHomeAPI() {
+        const contenedor = document.getElementById("ciudadesClima");
+
+        this.lugares.forEach(function (ciudad) {
+            const card = `
+    <div class="col-12 col-lg-3">
+        <div class="card place-card">
+            <div class="card-body">
+                <h5 class="card-title place-card__name">${ciudad.nombre}</h5>
+                <p class="place-card__emoji">${ciudad.emoji}</p>
+                <p class="place-card__temp">${ciudad.tempActual}°C</p>
+                <p class="place-card__state">${ciudad.estadoActual}</p>
+                <a href="detalleLocalidad.html?ciudad=${ciudad.nombre}" class="btn btn-custom">Ver detalle</a>
+            </div>
+        </div>
+    </div>
+`;
+            contenedor.insertAdjacentHTML("beforeend", card);
+        });
+
+    }
+
+}
 
 
 function buscarCiudad(nombre) {
@@ -228,27 +366,6 @@ function calcularEstadisticas(pronostico) {
 
 }
 
-if (document.getElementById("ciudadesClima")) {
-
-    const contenedor = document.getElementById("ciudadesClima");
-
-    ciudades.forEach(function (ciudad) {
-        const card = `
-    <div class="col-12 col-lg-3">
-        <div class="card place-card">
-            <div class="card-body">
-                <h5 class="card-title place-card__name">${ciudad.nombre}</h5>
-                <p class="place-card__emoji">${ciudad.emoji}</p>
-                <p class="place-card__temp">${ciudad.tempActual}°C</p>
-                <p class="place-card__state">${ciudad.estadoActual}</p>
-                <a href="detalleLocalidad.html?ciudad=${ciudad.nombre}" class="btn btn-custom">Ver detalle</a>
-            </div>
-        </div>
-    </div>
-`;
-        contenedor.insertAdjacentHTML("beforeend", card);
-    });
-}
 
 
 
@@ -328,6 +445,37 @@ if (document.getElementById("datosCiudad")) {
         contenedorPronoSemAct.insertAdjacentHTML("beforeend", card2);
     });
 
+
+
+    const contenedorAlertas = document.getElementById("alertas");
+    let alertas = "";
+
+    if (stats.promedio > 32) {
+        alertas = `<p>⚠️ Alerta de calor</p>`;
+    } else if (stats.promedio < 5) {
+        alertas = `<p>🥶 Alerta de frío</p>`;
+    }
+
+    contenedorAlertas.innerHTML = `
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h3>🚨 Alertas de clima</h3>
+                ${alertas || "<p>Sin alertas para esta semana</p>"}
+            </div>
+        </div>
+    </div>
+`;
 }
 
 
+
+
+
+const app = new WeatherApp();
+
+if (document.getElementById("ciudadesClima")) {
+    app.cargarLugares().then(() => {
+        app.mostrarCardsHomeAPI();
+    });
+}
